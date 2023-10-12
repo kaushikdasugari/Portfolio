@@ -1,15 +1,24 @@
 body {
     margin: 0; /* added this property to remove white just before the nav bar */
-    width: fit-content;
+   /* width: fit-content; */ /* this was working for navBar but the screen content was changed when another div was added hence I commented it, the navbar was fitting itselt for the content */
+    
 }
+
+.main {
+    position: relative;
+    display: block;
+}
+
 .navBar {
+    
     padding: 0;
     margin: 0px;
     font-weight: bold;
-    /*position: sticky; */ /* This is for fixing nav to top while scrolling must futher investigate */
+    position: sticky;  /* This is for fixing nav to top while scrolling must futher investigate */
     background-color: black;
     width: 100%; /* This property allows our nav bar to fit 100% of the size */
-    position: fixed;  /* This property allowing me to keep the nav bar fixed while scrolling */
+   /* position: fixed; */ /* This property allowing me to keep the nav bar fixed while scrolling */ /* "REMOVED" not working hence commented, position fixed causing div stack on each other */
+
 
     
 }
@@ -54,3 +63,37 @@ body {
     background-color: aliceblue;
     color:black;
 }
+
+/* div class about_section */
+.about_section {
+    position: absolute;
+    padding-top: 1%;
+    display: flex;
+    width: 100%;
+}
+
+
+/* splitting div this left */
+.about_section #about_section_left {
+    flex: 30%;
+   
+    background-color: aqua;
+
+}
+
+
+
+/* splitting div this for right*/
+.about_section #about_section_right {
+    flex: 70%;
+    background-color: aquamarine;
+    text-align: center justify;
+   
+}
+
+
+.about_section #about_section_right h {
+    font-weight: bold;
+    font-size: 250%;
+}
+
