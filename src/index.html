@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaushik Datta</title>
+
+    <!-- Our link to all css styles, below is the location -->
+
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
 </head>
 <body>
 
-    <div class="navBar">
-        <--! 
+    <div class="navBar" id="nav-Bar">
+        <!-- 
             This div is for class navBar
 
             -- added list of details in navigational Bar 
+            -- added css properties to class navBar, I now have basic navBar up and looking good
 
          -->
-        <ul>
-            <li>Srinivasa Kaushik Datta, Dasugari</li>
-            <li>About</li>
-            <li>Work Experience</li>
-            <li>Education</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul> 
+         <ul>
+            <!-- Must add this navBar elements have onclick functionlity for further working of the page-->
+            <li class="nav-Left">Srinivasa Kaushik Datta, Dasugari</li>
+
+            <!-- The order of items are inverted, might be due to css float: right property, I have inverted the order here so that we can see correct order in the output-->
+            <li class="nav-Right">Contact</li>
+            <li class="nav-Right">Projects</li>
+            <li class="nav-Right">Education</li>
+            <li class="nav-Right">Work Experience</li>
+            <li class="nav-Right">About</li>
+         </ul>
          
 
-    </div>
+    </div> <br>
 
     <h>First Name: Srinivasa Daushik Datta</h>
     <h>Last Name: Dasugari</h>

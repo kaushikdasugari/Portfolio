@@ -1,0 +1,56 @@
+body {
+    margin: 0; /* added this property to remove white just before the nav bar */
+    width: fit-content;
+}
+.navBar {
+    padding: 0;
+    margin: 0px;
+    font-weight: bold;
+    /*position: sticky; */ /* This is for fixing nav to top while scrolling must futher investigate */
+    background-color: black;
+    width: 100%; /* This property allows our nav bar to fit 100% of the size */
+    position: fixed;  /* This property allowing me to keep the nav bar fixed while scrolling */
+
+    
+}
+
+/* for navBar class ul */
+.navBar ul{
+    list-style-type:none; /* to remove bullet points from list*/
+    margin: 0; /* to remove default margin*/
+    padding: 0; /* to remove default padding */
+    color: whitesmoke; /* Text colour of the list items in navbar */
+    /*position: sticky; */ /* This is for fixing nav to top while scrolling must futher investigate */
+    overflow: hidden; /* This sets our list in navBar class div otherwise it will be shown below the div */
+    
+
+}
+
+/* for navBar class li */
+.navBar li {
+    display: inline;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    text-align: center;
+    
+}
+
+/* nav-Left class to align contents to left */
+.nav-Left {
+    float: left;
+}
+
+
+/* nav-Right class to align contents to right */
+.nav-Right{
+    float: right;
+}
+
+
+/* added hovering higlight to li elements must further change to onclick compatible */
+.navBar li:hover {
+    background-color: aliceblue;
+    color:black;
+}
